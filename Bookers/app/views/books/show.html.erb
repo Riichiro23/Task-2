@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="show.css">
+ </head>
+
+
+ <body>
+
+<div class = "title">
+<% if flash[:notice] %>
+  <p style="color: #00ff00;"><%= flash[:notice] %></p>
+<% end %>
+</div>
+
+   <div class = "line">
+   <strong>Title:</strong>
+   <p class = "a"><%= @book.title %></p>
+   </div>
+
+  <div class = "line">
+   <strong>Body:</strong>
+   <p class = "a"><%= @book.body %></p>
+  </div>
+
+  <div class = "link">
+   <%= link_to 'Edit', edit_book_path(@book.id) %>
+  </div>
+  
+   <p class = "section">|</p>
+   
+  <div class = "link">
+   <%= link_to 'Back', books_path %>
+  </div>
+
+ </body>
+
+</html>

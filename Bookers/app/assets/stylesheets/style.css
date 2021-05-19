@@ -1,0 +1,28 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  margin:33px;
+}
+
+thead{
+  font-size:13px;
+  line-height:18px;
+}
+
+thead>tr>th{
+padding:1px 1px 5px 1px;
+}
+
+tbody{
+  font-size:13px;
+  line-height:18px;
+}
+
+tbody>tr>td{
+  padding:1px 5px 7px 5px;
+}
+
